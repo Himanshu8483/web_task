@@ -128,7 +128,7 @@ let searchh=async()=>{
   let res= await fetch(url,{ method:"GET"})
     let data = await res.json()
     let filterData=data.filter((e)=>{
-    return e.name.toUpperCase().includes(searchInp) || e.number.toUpperCase().includes(searchInp)|| e.class.toString().includes(searchInp)
+    return e.name.toUpperCase().includes(searchInp) || e.number.toUpperCase().includes(searchInp)|| e.class.toString().toUpperCase().includes(searchInp)
   })
     paginationn(filterData)
 }
@@ -202,7 +202,7 @@ let formFill= async(id)=> {
     </div>
     <div class="group">
       <label for="totalFees">Total Fees:</label>
-      <input type="number" value="${data.totalFees}"  placeholder="Total Fees" id="totalFees">
+      <input type="number" value="${data.totalFees}" readonly placeholder="Total Fees" id="totalFees">
     </div>
 
       <button onclick="updatee('${data.id}')">Update</button>
@@ -235,7 +235,6 @@ fetch(url,{
       number:searchNumber,
       rollNo:searchRollNo,
       totalFees:searchTotalFees,
-      
     }
   )
 })
@@ -341,6 +340,7 @@ let admission = () => {
       number: adphone,
       fees: classFees,
       totalFees: totalFees,
+      feesPaid:false,
     }),
   })
 location.href="admin.html";
