@@ -7,13 +7,7 @@
       "number": "7909348483",
       "rollNo": "1201",
       "totalFees": "12500",
-      "fees": {
-        "tution": 8000,
-        "library": 3000,
-        "exam": 1500
-      },
-      "id": "ac89",
-      "feesPaid": true
+      "id": "ac89"
     },
     {
       "name": "NEETU",
