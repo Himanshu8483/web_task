@@ -1,34 +1,29 @@
 {
   "Students": [
     {
-      "id": "ac89",
-      "name": "Himanshu",
+      "name": "HIMANSHU",
       "class": "12th",
       "section": "A",
-      "rollNo": "1201",
       "number": "7909348483",
+      "rollNo": "1201",
+      "totalFees": "12500",
       "fees": {
         "tution": 8000,
         "library": 3000,
         "exam": 1500
       },
-      "totalFees": 12500,
+      "id": "ac89",
       "feesPaid": true
     },
     {
-      "id": "74d1",
-      "name": "Neetu",
+      "name": "NEETU",
       "class": "11th",
-      "section": "A",
-      "rollNo": "1101",
+      "section": "B",
       "number": "9285550000",
-      "fees": {
-        "tution": 7000,
-        "library": 2500,
-        "exam": 1200
-      },
-      "totalFees": 10700,
-      "feesPaid": true
+      "rollNo": "1101",
+      "totalFees": "10700",
+      "feesPaid": true,
+      "id": "74d1"
     },
     {
       "id": "4e6a",
@@ -59,19 +54,13 @@
       "totalFees": 7300
     },
     {
-      "id": "aec2",
-      "name": "Dhruv",
+      "name": "DHRUV",
       "class": "9th",
-      "section": "A",
-      "rollNo": "902",
+      "section": "B",
       "number": "1234567890",
-      "fees": {
-        "tution": 5000,
-        "library": 1500,
-        "exam": 800
-      },
-      "totalFees": 7300,
-      "feesPaid": true
+      "rollNo": "902",
+      "totalFees": "7300",
+      "id": "aec2"
     },
     {
       "id": "139b",
@@ -130,20 +119,6 @@
       "totalFees": 10500
     },
     {
-      "id": "7b8e",
-      "name": "Him",
-      "class": "12th",
-      "section": "B",
-      "rollNo": "1205",
-      "number": "7909348483",
-      "fees": {
-        "tution": 8000,
-        "library": 3000,
-        "exam": 1500
-      },
-      "totalFees": 12500
-    },
-    {
       "name": "ADITYA",
       "class": "11th",
       "section": "A",
@@ -151,6 +126,24 @@
       "rollNo": "1103",
       "totalFees": "10700",
       "id": "4045"
+    },
+    {
+      "name": "JATIN DEVELOPER",
+      "class": "12th",
+      "section": "B",
+      "number": "1234123444",
+      "rollNo": "1206",
+      "totalFees": "12500",
+      "feesPaid": true,
+      "id": "7cd2"
+    },
+    {
+      "name": "VIJJU",
+      "section": "B",
+      "number": "1234123411",
+      "rollNo": "1207",
+      "totalFees": "12500",
+      "id": "d955"
     }
   ]
 }

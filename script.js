@@ -202,7 +202,7 @@ let formFill= async(id)=> {
     </div>
     <div class="group">
       <label for="totalFees">Total Fees:</label>
-      <input type="number" value="${data.totalFees}" readonly placeholder="Total Fees" id="totalFees">
+      <input type="number" value="${data.totalFees}"  placeholder="Total Fees" id="totalFees">
     </div>
 
       <button onclick="updatee('${data.id}')">Update</button>
