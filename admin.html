@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Fees Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body onload="fetchAdmin()">
+  <h1>School Fees Management System</h1>
+  <div class="container">
+    <button onclick="admissions()">Admission Form</button>
+    <button onclick="checkUser()">Students Data</button>
+    <button onclick="home()">Home Section</button>
+  <h2>Enter Name/Mobile No./Class to Search</h2>
+  
+    <input type="text"  placeholder="Search Here" id="searchInp" oninput="searchh()">
+<br><br>
+    <div id="contentt"></div>
+
+      <br><br><br>
+      <table>
+        <h2>Manage Student Information</h2>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>  
+            <th>Mobile No</th>
+            <th>Roll No</th>
+            <th>User Id</th>
+            <th>Total Fees</th>
+            <th>Fees Status</th>
+            <th>Edit Data</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="studentData">
+        </tbody>
+      </table>
+
+  </div>
+  <div id="pagin"></div>
+
+ <!-- jquery for pagination  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Pagination script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js" integrity="sha512-GzbaI5EsNzdEUq6/2XLYpr1y9CUZRIVsUeWTAFgULtQa5jZ3Nug8i0nZKM6jp9NffBCZhymPPQFcF0DK+JkRpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- alert library script  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>

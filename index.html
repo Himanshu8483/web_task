@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+</head>
+<body>
+    <!-- <button onclick="checkAdmin()">Go to Admission Page</button> -->
+    <div>
+        <nav id="navbar">
+            <div class="navbar-logo">
+                <a href="#"><span>S</span>chool <span>B</span>ooking</a>
+            </div>
+            <ul class="navul">
+                <li><button id="btn1" onclick="checkAdmin()">Admin's Login</button></li>
+                <li><button id="btn2" onclick="checkUser()">Student Login</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="sec1">
+        <div class="overlay">
+            <span>Welcome to our School System. Manage meetings, fees, and more with ease. <br> 
+            <img src="img/logo.png" width="30%" height="30%" alt="" >
+            <button onclick="checkUser()">Student Status</button>
+            </span>
+            <div class="book">
+                <img src="img/book.png" alt="" width="100%" height="100%">
+            </div>
+        </div>
+        
+        <!-- <img src="img/book.png" width="100%" height="100%"> -->
+    </section>
+    
+    <footer>
+                <span>© 2025 School Management System. All rights reserved.</span>
+    </footer>
+    <script src="script.js"></script>
+        <!-- alert library script  -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

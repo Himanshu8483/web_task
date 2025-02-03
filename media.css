@@ -1,0 +1,40 @@
+@media screen and (max-width: 1000px) {
+#navbar{
+    flex-direction: column;
+}
+
+#sec1 .overlay span{
+font-size: 30px;
+padding: 10px;
+
+}
+
+#sec1 .overlay span button{
+font-size: 80%;
+right: 30%;
+}
+#navbar ul #btn2{
+    top: 100px;
+  }
+  #navbar ul #btn1{
+    top: 100px;
+  }
+#sec1 .overlay span img {
+    background-size: cover;
+    zoom: 1;
+}
+  /* Responsive Design */
+    h1{
+        width: 100%;
+    }
+    .container {
+      width: 95%;
+    }
+    td, th {
+      width: 100%;
+    }
+    tr {
+        display: flex;
+      flex-direction: column;
+    }
+}

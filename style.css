@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  /* index html home section part  */
+
+#navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #0c5d69;
+  height: 90px;
+}
+
+#navbar ul{
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+#navbar ul button{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  position: fixed;
+  z-index:2;
+  top: 25px;;
+  /* left: 0; */
+}
+#navbar ul #btn2{
+  right: 20px;
+}
+#navbar ul #btn1{
+  left: 20px;
+}
+
+#navbar .navbar-logo a {
+  color: white;
+  font-family: cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+#navbar .navbar-logo a span {
+  color: brown;
+  font-size: 150%;
+  font-weight: 600;
+}
+
+#homebtn{
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  font-size: large;
+  z-index: 1;
+}
+/* section 1  */
+#sec1 {
+  height: 100vh;
+  width: 100%;  
+  background-image: url(img/school.jpg);
+  background-position: center;
+  background-size: cover;
+  /* animation: animee 30s linear infinite; */
+}
+
+/* 
+@keyframes animee {
+  0%{
+    background-image: url(img/book.png);
+    background-size: cover;
+  }
+  20%{
+    background-image: url(img/group.png);
+    background-size: cover;
+  }
+  40%{
+    background-image: url(img/school.jpg);
+    background-size: cover;
+  }
+  60%{
+    background-image: url(img/school.png);
+    background-size: cover;
+  }
+  80%{
+    background-image: url(img/students.png);
+    background-size: cover;
+  }
+  100%{
+    background-image: url(img/student.png);
+    background-size: cover;
+  }
+   */
+
+#sec1 .overlay{
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#000000d8, #003b45c3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+
+}
+#sec1 .overlay span{
+  color: white;
+  padding: 100px;
+  font-weight: 900;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+#sec1 .overlay span button{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+  border-radius: 5px;
+  /* padding: 10px; */
+  font-weight: 600;
+  position: absolute;
+  bottom: 60px;
+  right: 37%;
+  z-index: 1;
+  
+}
+
+#sec1 .overlay .book {
+  position: absolute;
+  width: 30%;
+  height: 25%;
+  right: 10px;
+  bottom: 0px;
+}
+
+
+
+
+/* =========================== */
+footer{
+  height: 60px;
+  background-color: #0c5d69;
+color: white;
+line-height: 60px;
+background-size: contain;
+}
+/* =========================== */
+
+
+  /* others===============================f */
+  h1 {
+    background-color: #0c5d69;
+    color: white;
+    padding: 5px 15px;
+    margin: 0;
+  }
+  
+  .container, .content {
+      width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
+  
+  .group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  thead {
+    background-color: #0c5d69;
+    color: white;
+    
+  }
+  tbody tr:nth-child(even) {
+    background-color: #cfeef5;
+  }
+  
+  tbody tr:hover {
+    background-color: #9ababe;
+  }
+  
+  td, th {
+    width: 10%;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+  
+  button, .btn {
+    background-color: #0c5d69;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 2s all ease;
+    letter-spacing: 1px;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #053036;
+    transform: scale(1.1);
+  }
+  .payColumn{
+    width: 100px;
+  }
+
+  
+
+  /* pagination  */
+  #pagin{
+    padding: 10px;
+  }
+  #pagin ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+  }
+  #pagin ul li {
+    cursor: pointer;
+    font-size: large;
+  }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Fees Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<!-- <body onload="fetchData()"> -->
+<body>
+  <h1>School Fees Management System</h1>
+  <button id="homebtn" onclick="home()">Home Section</button>
+
+  <div class="container">
+  <h2>Enter Details To Pay Fees</h2>
+    <div class="group">
+      <label for="class">Select Class:</label>
+      <select id="class">
+        <option value="">Select Class</option>
+        <option value="9th">Class 9th</option>
+        <option value="10th">Class 10th</option>
+        <option value="11th">Class 11th</option>
+        <option value="12th">Class 12th</option>
+      </select>
+    </div>
+    <div class="group">
+      <label for="section">Select Section:</label>
+      <select id="section">
+        <option value="">Section</option>
+        <option value="A">Section A</option>
+        <option value="B">Section B</option>
+      </select>
+    </div>
+    <div class="group">
+      <label for="name">Student's Name:</label>
+      <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="group">
+      <label for="number">Mobile Number:</label>
+      <input type="text" placeholder="Mobile" id="number">
+    </div>
+    <div class="group">
+      <label for="rollNo">Roll Number:</label>
+      <input type="text" placeholder="Enroll Number" id="rollNo">
+    </div>
+    <div class="group">
+      <label for="inpId">Enter User Id:</label>
+      <input type="text" placeholder="User Id" id="inpId">
+      <!-- <input type="text" placeholder="Enroll No" id="rollNo" oninput="return searchh()"> -->
+    </div>
+      <button onclick="searchStudent()">Submit</button>
+      <br><br>
+      <table style="display: none;" id="studentTab">
+        <h2>Student Information</h2>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>
+            <th>User Id</th>
+            <th>Tution Fees</th>
+            <th>Other Fees</th>
+            <th>Total Fees</th>
+            <th>Fees Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable">
+        </tbody>
+      </table>
+
+  </div>
+
+
+    <!-- alert library script  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>

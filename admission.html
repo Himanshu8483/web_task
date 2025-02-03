@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">Doctor Care</title>
+  <link rel="icon" href="img/title.png">
+ <!--AOS animation (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- external css file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
+</head>
+<body  id="admission" >
+  <button id="homebtn" onclick="home()">Home Section</button>
+
+   <div data-aos="fade-right" data-aos-duration="2000">
+    <h1>Admission</h1>
+    <div class="container">
+      <form>
+        <div class="group">
+          <label for="adname">Full Name:</label>
+          <input type="text" id="adname" placeholder="Enter your name">
+        </div>
+
+        <div class="group">
+          <label for="adphone">Phone Number:</label>
+          <input type="text" id="adphone" placeholder="10-digit number">
+        </div>
+        <div class="group">
+            <label for="adclass">Select Class:</label>
+            <select id="adclass">
+              <option value="">Select Class</option>
+              <option value="9th">Class 9th</option>
+              <option value="10th">Class 10th</option>
+              <option value="11th">Class 11th</option>
+              <option value="12th">Class 12th</option>
+            </select>
+          </div>
+          <div class="group">
+            <label for="adsection">Select Section:</label>
+            <select id="adsection">
+              <option value="">Section</option>
+              <option value="A">Section A</option>
+              <option value="B">Section B</option>
+            </select>
+          </div>
+          <div class="group">
+            <label for="adRollNo">Roll Number:</label>
+            <input type="text" placeholder="Enroll Number" id="adRollNo">
+          </div>
+
+        <input type="submit" class="btn" value="Admission" onclick="return admission()">
+      </form>
+    </div>
+  </div>
+
+
+
+      <!-- AOS animation 1st link-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- AOS animation 2nd link -->
+      <script>
+        AOS.init();
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>
